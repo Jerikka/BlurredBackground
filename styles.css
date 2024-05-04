@@ -1,0 +1,103 @@
+body {
+    margin: 0;
+}
+
+.container {
+    display: flex; 
+    flex-direction: column;
+    align-items: center; 
+    height: 100vh;
+    justify-content: center;
+    background: url("https://images.unsplash.com/photo-1713101888005-49e61c91891b?q=80&w=3087&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-size: cover;
+    text-align: center;
+}
+
+h1 {
+    font-size: 60px;
+    font-family: 'Playfair';
+    letter-spacing: 1.5px;
+    text-shadow: 2px 2px 4px grey; 
+}
+
+.btn {
+    padding: 10px 20px;
+    width: 175px;
+    cursor: pointer;
+    background-color:#AC915D;
+    opacity: 85%;
+    border-radius: 2px;
+    font-size: 15px;
+}
+
+.btn:hover {
+    filter: brightness(0.8);
+}
+
+.active.container{
+    filter: blur(4px) brightness(.7);
+}
+
+.popup-container {
+    position: fixed;
+    left: 50%;
+    width: 400px;
+    height: 200px;
+    top: 30%;
+    transform: translateX(-50%);
+    background-color: white; 
+    display: flex; 
+    flex-direction: column;
+    padding: 20px;
+    background: url('https://images.unsplash.com/photo-1563630381190-77c336ea545a?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c3VufGVufDB8fDB8fHww');
+    background-size: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px black;
+}
+
+h4 {
+    font-size: 30px;
+    margin: 10px 0;
+    font-family: 'Playfair';
+    color: white; 
+}
+
+label {
+    color: white;
+    font-family: 'Playfair';
+}
+
+.popup-btn{
+    background-color: #AC915D;
+    padding: 5px;
+    font-size: 15px;
+    cursor: pointer;
+    border: 2px solid; 
+}
+
+.input {
+    border: 2px solid;
+    padding: 7px;
+    margin: 7px 0;
+    font-size: 13px;
+    text-align: center;
+}
+
+.input::placeholder{
+    color: grey;
+}
+
+.close-icon {
+    position: absolute; 
+    right: 20px;
+    cursor: pointer;
+    font-size: 22px; 
+}
+
+.close-icon:hover {
+    color: white;
+}
+
+.active.popup-container{
+    visibility: hidden; 
+}
